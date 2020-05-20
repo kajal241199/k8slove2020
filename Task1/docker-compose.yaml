@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+ app1:
+  image:  6367400may2020q1:v1
+  build: 
+   context: .
+   dockerfile: adhochttpd.dockerfile 
+  container_name: httpdct
+  ports:
+   - "9991:80"  
+	  
